@@ -1,5 +1,5 @@
 {
-  "name": "webpack-manual",
+  "name": "semantic-webpack",
   "version": "1.0.0",
   "description": "",
   "private": true,
@@ -16,15 +16,20 @@
     "@babel/preset-env": "^7.1.6",
     "babel-loader": "^8.0.4",
     "css-loader": "^1.0.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^2.0.0",
+    "less-loader": "^4.1.0",
     "lodash": "^4.17.11",
+    "semantic-ui-less": "^2.4.1",
     "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
     "webpack": "^4.25.1",
     "webpack-cli": "^3.1.2"
   },
   "devDependencies": {
     "clean-webpack-plugin": "^1.0.0",
     "html-webpack-plugin": "^3.2.0",
+    "less": "^2.7.3",
     "webpack-dev-server": "^3.1.10"
   }
 }
