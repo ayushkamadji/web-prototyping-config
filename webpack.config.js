@@ -52,7 +52,8 @@ module.exports = {
   resolve: {
     alias: {
       "../../theme.config$": path.join(__dirname, "theme/theme.config"),
-    }
+    },
+    extensions: ["*", ".js", ".jsx"]
   },
   output: {
     filename:   "[name].bundle.js",
@@ -62,11 +63,11 @@ module.exports = {
     rules: [
       { test: /\.css%/,
         use: ["style-loader", "css-loader"] },
-      { test: /\.js$/,
+      { test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/,
         use: [
           { loader: "babel-loader", 
-            options: { presets: ["@babel/preset-env"]} }]
+            options: { presets: ["@babel/env"]} }]
       },
       // Sematic UI Less Rules
       { test: /\.(jpe?g|gif|ico|png|svg)$/,

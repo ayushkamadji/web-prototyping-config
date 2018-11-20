@@ -1,10 +1,6 @@
 import "../theme/semantic.less"
+import React from "react"
+import ReactDOM from 'react-dom'
+import App from './Containers/App'
 
-const load = () => {
-}
-
-document.addEventListener("DOMContentLoaded", load)
-
-if (module.hot) {
-  module.hot.accept(".", load)
-}
+ReactDOM.render(<App />, document.getElementById("root"))
