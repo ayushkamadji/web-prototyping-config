@@ -53,7 +53,7 @@ module.exports = {
     alias: {
       "../../theme.config$": path.join(__dirname, "theme/theme.config"),
     },
-    extensions: ["*", ".js", ".jsx"]
+    extensions: ["*", ".js", ".jsx", ".json"]
   },
   output: {
     filename:   "[name].bundle.js",
